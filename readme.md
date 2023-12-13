@@ -1,8 +1,8 @@
-#Especificaciones
+# Especificaciones
 Una universidad busca implementar una base de datos para gestionar la información de sus estudiantes, profesores, cursos y asignaturas. La base de datos se suministra con la información necesaria para facilitar el seguimiento de la asignación de profesores a cursos y asignaturas. La universidad proporciona los enunciados de las consultas específicas que se deben realizar en la base de datos, con el objetivo de obtener información relevante según sus necesidades, como la carga laboral de los profesores y otros aspectos cruciales para la gestión académica.
 
 
-##Creacion base de datos
+## Creacion base de datos
 ```sql
 DROP DATABASE IF EXISTS universidad;
 CREATE DATABASE universidad CHARACTER SET utf8mb4;
@@ -69,7 +69,7 @@ CREATE TABLE alumno_se_matricula_asignatura (
 );
 ```
 
-#POBLAR BASE DE DATOS
+## POBLAR BASE DE DATOS
 ```sql
 USE universidad;
 /* Departamento */
@@ -268,7 +268,7 @@ INSERT INTO alumno_se_matricula_asignatura VALUES (19, 8, 5);
 INSERT INTO alumno_se_matricula_asignatura VALUES (19, 9, 5);
 INSERT INTO alumno_se_matricula_asignatura VALUES (19, 10, 5);
 ```
-
+## EJERCICIOS
 1. Devuelve un listado con el primer apellido, segundo apellido y el nombre de todos los alumnos. El listado deberá estar ordenado alfabéticamente de menor a mayor por el primer apellido, segundo apellido y nombre.
 
     ```sql
